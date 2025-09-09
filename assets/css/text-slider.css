@@ -1,0 +1,28 @@
+/* text-slider section css start */
+.text-slider-section {
+    padding: 18px 0 20px;
+    background-color: var(--white);
+}
+
+.text-slider-item p {
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--paragraph-text-color);
+    font-family: var(--paragraph-font);
+    text-transform: uppercase;
+    line-height: 1;
+}
+/* text-slider section css end */
+
+@media only screen and (max-width: 575px){
+    /* text-slider section css start */
+    .text-slider-section {
+        padding: 10px 0 12px;
+    }
+
+    .text-slider-item p {
+        font-size: 13px;
+        font-weight: 500
+    }
+    /* text-slider section css end */
+}

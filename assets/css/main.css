@@ -1,0 +1,408 @@
+/* common css start */
+/* import fonts-- */
+@font-face {
+    font-family: 'Muli';
+    src: url('../fonts/Muli-ExtraLight.woff') format('woff');
+    font-weight: 200;
+}
+
+@font-face {
+    font-family: 'Muli';
+    src: url('../fonts/Muli-Light.woff') format('woff');
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: 'Muli';
+    src: url('../fonts/Muli.woff') format('woff');
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'Muli';
+    src: url('../fonts/Muli-SemiBold.woff') format('woff');
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: 'Muli';
+    src: url('../fonts/Muli-SemiBold.woff') format('woff');
+    font-weight: 600;
+}
+
+@font-face {
+    font-family: 'Muli';
+    src: url('../fonts/Muli-Bold.woff') format('woff');
+    font-weight: 700;
+}
+
+/* colors */
+:root {
+    /* color */
+    --black: #000000;
+    --white: #ffffff;
+    --heading-text-color: #0B0B0B;
+    --paragraph-text-color: #000000;
+    --brand-color: #ED1C24;
+    --brand-color2: #306bac;
+    --card-bg: #ededed;
+    --border-color: #ccc;
+    --btn-color: #ffffff;
+    --btn-bg: #306bac;
+    --card-badge-bg: #242833;
+    --body-color: #F5F5F5;
+    --hover-color: #ED1C24;
+
+
+    /* font family */
+    --heading-font: "Muli", serif;
+    --paragraph-font: "Muli", serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    background-color: var(--body-color);
+    transition: all ease .7s;
+    margin: 80px 0 0 0;
+}
+
+body.active {
+    overflow: hidden;
+    transition: all ease .7s;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    font-family: var(--paragraph-font);
+    transition: ease .3s;
+    cursor: pointer;
+}
+
+a:hover {
+    color: var(--hover-color);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+    line-height: 1.2;
+    font-family: var(--heading-font);
+    color: var(--heading-text-color);
+}
+
+p {
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--paragraph-text-color);
+    font-family: var(--paragraph-font);
+    margin: 0;
+}
+
+.h1 {
+    font-size: clamp(32px, 3.87vw, 48px);
+    font-weight: 700;
+    line-height: clamp(36px, 4.52vw, 56px);
+}
+
+.h2 {
+    font-size: clamp(28px, 3.38vw, 42px);
+    font-weight: 700;
+    line-height: clamp(34px, 3.87vw, 48px);
+}
+
+.h3 {
+    font-size: clamp(26px, 2.90vw, 36px);
+    font-weight: 600;
+    line-height: clamp(30px, 3.22vw, 40px);
+}
+
+.h4 {
+    font-size: clamp(22px, 2.25vw, 28px);
+    font-weight: 600;
+    line-height: clamp(26px, 2.58vw, 32px);
+}
+
+.h5 {
+    font-size: clamp(20px, 1.93vw, 24px);
+    font-weight: 500;
+    line-height: clamp(24px, 2.25vw, 28px);
+}
+
+.h6 {
+    font-size: clamp(18px, 1.61vw, 20px);
+    font-weight: 500;
+    line-height: clamp(22px, 1.93vw, 24px);
+}
+
+.container {
+    max-width: 1240px;
+    width: 100%;
+    padding: 0 20px;
+    margin: 0 auto;
+}
+
+.section {
+    padding: 80px 0;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+}
+
+/* input css start */
+input,
+textarea,
+select {
+    color: var(--paragraph-text-color);
+    font-size: 16px;
+    font-weight: 400;
+    font-family: var(--paragraph-font);
+    outline: none;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    appearance: none;
+    -moz-appearance: textfield;
+    -webkit-appearance: none;
+    /* Firefox */
+}
+
+input::placeholder,
+textarea::placeholder,
+select::placeholder {
+    color: var(--black);
+    font-size: 16px;
+    font-weight: 500;
+    font-family: var(--paragraph-font);
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    /* display: none; <- Crashes Chrome on hover */
+    -webkit-appearance: none;
+    margin: 0;
+    /* <-- Apparently some margin are still there even though it's hidden */
+}
+
+/* input css end */
+
+/* button css start */
+button {
+    background-color: transparent;
+    outline: none;
+    cursor: pointer;
+    border: none;
+    transition: ease .3s;
+    color: var(--btn-color);
+}
+
+.btn {
+    font-size: 16px;
+    font-weight: 700;
+    padding: 15px 40px;
+    border-radius: 5px;
+    transition: ease .3s;
+    font-family: var(--paragraph-font);
+    text-transform: uppercase;
+    text-align: center;
+    display: block;
+    z-index: 1;
+    text-decoration: none;
+    cursor: pointer;
+    line-height: 1;
+}
+
+.btn:hover {
+    text-decoration: none;
+}
+
+.primary-btn {
+    color: var(--white);
+    position: relative;
+    overflow: hidden;
+    background-color: var(--btn-bg);
+    border: 2px solid var(--btn-bg);
+}
+
+.primary-btn span,
+.secondary-btn span {
+    position: absolute;
+    display: block;
+    width: 0;
+    height: 0;
+    border-radius: 50%;
+    transition: width 0.4s ease-in-out, height 0.4s ease-in-out;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+}
+
+.primary-btn span {
+    background-color: var(--white);
+}
+
+.primary-btn:hover {
+    color: var(--black);
+}
+
+.primary-btn:hover span,
+.secondary-btn:hover span {
+    width: 225%;
+    height: 562.5px;
+}
+
+.primary-btn:active {
+    background-color: var(--white);
+}
+
+.secondary-btn {
+    color: var(--white);
+    position: relative;
+    overflow: hidden;
+    background-color: var(--black);
+    border: 2px solid var(--black);
+}
+
+.secondary-btn span {
+    background-color: var(--white);
+}
+
+.secondary-btn:hover {
+    color: var(--black);
+    border-color: var(--black);
+}
+
+.secondary-btn:active {
+    background-color: var(--white);
+}
+
+/* button css end */
+
+/* section heading css start */
+.section-heading-wrapper {
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.section-sub-heading {
+    color: var(--brand-color);
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 26px;
+    font-family: var(--heading-font);
+    margin: 0 0 5px 0;
+}
+
+.section-heading em {
+    color: var(--brand-color);
+    font-style: normal;
+}
+
+
+.section-heading {
+    color: var(--heading-text-color);
+    text-transform: capitalize;
+    font-weight: 300;
+    line-height: 60px;
+    font-size: 42px;
+    font-family: var(--heading-font);
+}
+
+.section-heading-text {
+    color: var(--paragraph-text-color);
+    margin: 5px auto 0;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    max-width: 500px;
+}
+
+.section-btn {
+    display: flex;
+    justify-content: center;
+    margin: 74px 0 0 0;
+}
+
+.section-btn .btn {
+    font-size: 22px;
+    font-weight: 700;
+    padding: 16px 114.5px;
+}
+
+/* section heading css end */
+
+.swiper-button-prev::after,
+.swiper-button-next::after {
+    display: none;
+}
+
+/* common css end */
+
+
+@media only screen and (max-width: 992px) {
+    .section {
+        padding: 50px 0;
+    }
+
+    body {
+        margin: 60px 0 0 0;
+    }
+}
+
+@media only screen and (max-width:767px) {
+
+    /* common css start */
+    /* btn css start */
+    .btn {
+        font-size: 14px;
+        padding: 12px 46px;
+    }
+
+    /* btn css end */
+    .section-heading-wrapper {
+        margin-bottom: 30px;
+    }
+
+    .section-sub-heading {
+        font-size: 16px;
+        line-height: 22px;
+    }
+
+    .section-heading {
+        line-height: 28px;
+        font-size: 22px;
+        font-weight: 500;
+    }
+
+    .section-heading-text {
+        line-height: 18px;
+        margin: 5px auto 0;
+        font-size: 14px;
+        font-weight: 400;
+    }
+
+    /* common css end */
+}
