@@ -1,27 +1,24 @@
 /* product-card css start */
 .product-card {
-    height: 100%;
-    padding: 20px;
-    box-shadow: 0 0 10px 3px rgb(0 0 0 / 10%);
-    border-radius: 15px;
-    background-color: var(--white);
+	height: 100%;
+	background-color: var(--white);
 	position: relative;
 }
 
 .card-badge {
-    position: absolute;
-    top: 20px;
-    left: 20px;
-    padding: 4px 10px 8px;
-    background-color: var(--brand-color2);
-    color: var(--white);
-    font-size: 12px;
-    line-height: 1;
-    font-family: var(--paragraph-font);
-    font-weight: 500;
-    z-index: 10;
-    border-radius: 5px;
-    text-transform: capitalize;
+	position: absolute;
+	top: 10px;
+	left: 10px;
+	padding: 4px 10px 8px;
+	background-color: var(--brand-color);
+	color: var(--white);
+	font-size: 12px;
+	line-height: 1;
+	font-family: var(--paragraph-font);
+	font-weight: 700;
+	z-index: 10;
+	border-radius: 3px;
+	text-transform: uppercase;
 }
 
 .product-card .card-image-wrap {
@@ -33,7 +30,7 @@
 	height: auto;
 	max-width: 100%;
 	overflow: hidden;
-	border-radius: 10px;
+	border-radius: 5px;
 	padding: 0;
 	position: relative;
 	width: 100%;
@@ -62,6 +59,7 @@
 
 .product-card .card-img .main-img img {
 	object-fit: cover;
+	padding: 20px;
 }
 
 .card_hover:hover .card-img .main-img {
@@ -82,6 +80,7 @@
 	opacity: 0;
 	visibility: hidden;
 	transition: ease .5s;
+	padding: 20px;
 }
 
 .card_hover:hover .card-img .hover-img {
@@ -95,17 +94,43 @@
 }
 
 .product-card .card-content {
-    margin: 15px 0 0 0;
-    text-align: center;
+	margin: 10px 0 0 0;
+}
+
+.card-rattings {
+	display: flex;
+	align-items: center;
+	gap: 8px;
+	margin: 0 0 2px 0;
+}
+
+.card-rattings-star {
+	display: flex;
+	width: 70px;
+}
+
+.card-rattings-number {
+	color: var(--text-muted);
+	font-size: 12px;
+	font-weight: 600;
+	line-height: 1;
+}
+
+.card-title-and-price {
+	display: flex;
+	justify-content: space-between;
+	gap: 16px;
 }
 
 .product-card .card-content .card-title {
-    color: var(--heading-text-color);
-    font-family: var(--heading-font);
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 24px;
-    transition: ease .2s;
+	color: var(--heading-text-color);
+	font-family: var(--heading-font);
+	font-weight: 700;
+	font-size: 14px;
+	line-height: 22px;
+	transition: ease .2s;
+	text-transform: uppercase;
+	width: calc(100% - 82px);
 }
 
 .product-card .card-content .card-title:hover {
@@ -113,22 +138,45 @@
 }
 
 .product-card .card-content .card-price-wrap {
-	margin: 10px 0 0 0;
+	width: 75px;
+	padding: 5px 0 0 0;
 }
 
 .product-card .card-content .card-price-wrap .latest-price {
-    color: var(--paragraph-text-color);
-    font-family: var(--paragraph-font);
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 22px;
+	color: var(--paragraph-text-color);
+	font-family: var(--paragraph-font);
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 1;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
+	gap: 4px;
 }
 
 .product-card .card-content .card-price-wrap .latest-price span {
-    color: var(--paragraph-text-color);
-    font-weight: 300;
-    text-decoration: line-through;
+	color: var(--text-muted);
+	text-decoration: line-through;
 	display: inline-block;
+	margin-left: 5px;
+}
+
+.card-varient-wrap {
+	margin: 8px 0 0 0;
+	display: flex;
+	align-items: center;
+	gap: 5px;
+}
+
+.card-varient {
+	font-size: 13px;
+	font-weight: 500;
+	line-height: 1;
+	text-transform: capitalize;
+}
+
+.card-varient-separator {
+	display: flex;
 }
 
 .card-btn {
@@ -147,40 +195,11 @@
 
 	/* product-card css start */
 	.product-card {
-		padding: 10px;
-		border-radius: 10px;
-	}
-
-	.card-badge {
-		top: 5px;
-		left: 5px;
-		padding: 3px 7px 6px;
-		border-radius: 3px;
-	}
-
-	.product-card .card-image-wrap {
 		border-radius: 5px;
-	}
-
-	.product-card .card-content {
-		margin: 10px 0 0 0;
-	}
-
-	.product-card .card-content .card-title {
-		font-size: 12px;
-		line-height: 18px;
-	}
-
-	.product-card .card-content .card-price-wrap {
-		margin: 5px 0 0 0;
-	}
-
-	.product-card .card-content .card-price-wrap .latest-price {
-		font-size: 14px;
-	}
-
-	.card-btn {
-		margin: 8px 0 0 0;
+		-webkit-border-radius: 5px;
+		-moz-border-radius: 5px;
+		-ms-border-radius: 5px;
+		-o-border-radius: 5px;
 	}
 
 	.card-btn .btn {

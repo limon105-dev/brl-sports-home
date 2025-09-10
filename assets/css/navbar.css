@@ -107,7 +107,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 30px;
+    gap: 10px;
 }
 
 .nav-link {
@@ -278,19 +278,19 @@
     -o-transition: all ease .3s;
 }
 
-.nav-icons li a:hover,
+/* .nav-icons li a:hover,
 .nav-icons li span:hover {
     background-color: var(--hover-color);
-}
+} */
 
 .nav-icons li a:hover svg circle,
 .nav-icons li span:hover svg circle {
-    stroke: var(--white);
+    stroke: var(--hover-color);
 }
 
 .nav-icons li a:hover svg path,
 .nav-icons li span:hover svg path {
-    stroke: var(--white);
+    stroke: var(--hover-color);
 }
 
 .nav-icons.mabile-nav-icons {
@@ -907,6 +907,14 @@
 
     .megamenu-items .nav-icons.mabile-nav-icons {
         padding: 0 0 24px 0;
+    }
+
+    .megamenu-item-img {
+        border-radius: 5px;
+        -webkit-border-radius: 5px;
+        -moz-border-radius: 5px;
+        -ms-border-radius: 5px;
+        -o-border-radius: 5px;
     }
 
     /* navbar css start */

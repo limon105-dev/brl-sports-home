@@ -29,8 +29,10 @@
 
 .hero-text {
     color: var(--white);
-    font-weight: 6500;
+    font-weight: 500;
     margin: 20px 0 0 0;
+    font-size: 16px;
+    line-height: 24px;
 }
 
 .hero-btns {
@@ -42,8 +44,18 @@
 }
 
 .hero-btns .secondary-btn {
-    background-color: var(--brand-color);
-    border-color: var(--brand-color);
+    background-color: var(--white);
+    border-color: var(--white);
+    color: var(--black);
+}
+
+.hero-btns .secondary-btn span {
+    background-color: var(--btn-bg);
+}
+
+.hero-btns .secondary-btn:hover  {
+    border-color: var(--btn-bg);
+    color: var(--white);
 }
 
 /* hero-section css end */
@@ -58,6 +70,14 @@
     .hero-content-inner {
         max-width: 600px;
         text-align: center;
+    }
+
+    .hero-heading {
+        margin: 0 auto;
+    }
+
+    .hero-text {
+        margin: 10px 0 0 0;
     }
 
     .hero-btns {

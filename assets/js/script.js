@@ -61,12 +61,6 @@ $(document).ready(function () {
 
 })
 
-// video player js start....
-new VenoBox({
-	selector: '.video-play-btn',
-});
-// video player js end....
-
 // btn js ---
 // primary btn---
 $(function () {
@@ -115,53 +109,10 @@ $(function () {
 });
 // btn js ---
 
-// product-single-slider js start---
-var swiper = new Swiper(".product-single-slider-thumb", {
-	direction: "vertical",
-	loop: true,
-	spaceBetween: 20,
-	slidesPerView: 5,
-	freeMode: true,
-	breakpoints: {
-		// when window width is >= 320px
-		1: {
-			spaceBetween: 12,
-			slidesPerView: 4,
-			direction: "horizontal",
-		},
-		// when window width is >= 576px
-		576: {
-			spaceBetween: 16,
-			slidesPerView: 5,
-			direction: "horizontal",
-		},
-		// when window width is >= 768px
-		768: {
-			spaceBetween: 20,
-			slidesPerView: 6,
-			direction: "horizontal",
-		},
-		// when window width is >= 767px
-		993: {
-			direction: "vertical",
-			spaceBetween: 20,
-			slidesPerView: 5,
-		}
-	}
-});
-var swiper2 = new Swiper(".product-single-slider", {
-	loop: true,
-	spaceBetween: 10,
-	thumbs: {
-		swiper: swiper,
-	},
-});
-// product-single-slider js end---
-
 // product slider js start--
 var swiper = new Swiper(".product-slider", {
-	slidesPerView: 3,
-	spaceBetween: 30,
+	slidesPerView: 4,
+	spaceBetween: 20,
 	grabCursor: true,
 	loop: true,
 	pagination: {
@@ -169,14 +120,14 @@ var swiper = new Swiper(".product-slider", {
 		clickable: true,
 	},
 	navigation: {
-		nextEl: '.swiper-button-next',
-		prevEl: '.swiper-button-prev',
+		nextEl: '.product-slider-btn-next',
+		prevEl: '.product-slider-btn-prev',
 	},
 	breakpoints: {
 		// when window width is >= 320px
 		1: {
 			spaceBetween: 10,
-			slidesPerView: 2,
+			slidesPerView: 1.3,
 		},
 		// when window width is >= 768px
 		576: {
@@ -185,27 +136,19 @@ var swiper = new Swiper(".product-slider", {
 		},
 		// when window width is >= 993px
 		993: {
-			spaceBetween: 20,
+			spaceBetween: 16,
 			slidesPerView: 3,
 		},
 		// when window width is >= 1140x
 		1140: {
-			spaceBetween: 25,
-			slidesPerView: 3.6,
+			spaceBetween: 20,
+			slidesPerView: 3,
 		},
 		// when window width is >= 1290px
 		1290: {
-			spaceBetween: 30,
-			slidesPerView: 3,
+			spaceBetween: 20,
+			slidesPerView: 4,
 		}
 	}
 });
 // product slider js end--
-
-// progesss-bar js start--
-const progress = document.querySelector('.progress');
-progress.addEventListener('input', function () {
-	const value = this.value;
-	this.style.background = `linear-gradient(to right,rgb(237, 28, 36) 0%,rgb(237, 28, 36) ${value}%,rgb(216, 216, 216) ${value}%)`
-})
-// progesss-bar js end--
