@@ -795,19 +795,6 @@
 
 /* navbar section css end */
 
-@media only screen and (max-width: 1499px) {
-
-    /* navbar css start */
-    .megamenu-wrapper {
-        overflow-y: auto;
-        height: 500px;
-        scrollbar-width: thin;
-        padding: 0 0 24px 0;
-    }
-
-    /* navbar css end */
-}
-
 @media only screen and (max-width: 992px) {
 
     /* navbar css start */

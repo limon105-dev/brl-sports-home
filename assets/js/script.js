@@ -152,3 +152,52 @@ var swiper = new Swiper(".product-slider", {
 	}
 });
 // product slider js end--
+
+// testimonial slider js start--
+var swiper = new Swiper(".testimonial-slider", {
+	slidesPerView: "auto",
+	centeredSlides: true,
+	spaceBetween: 20,
+	grabCursor: true,
+	loop: true,
+	speed: 1000,
+	pagination: {
+		el: ".swiper-pagination",
+		clickable: true,
+	},
+	navigation: {
+		nextEl: '.product-slider-btn-next',
+		prevEl: '.product-slider-btn-prev',
+	},
+	breakpoints: {
+		// when window width is >= 320px
+		1: {
+			spaceBetween: 10,
+			slidesPerView: 1,
+			centeredSlides: false,
+			speed: 500,
+
+		},
+		// when window width is >= 576px
+		576: {
+			spaceBetween: 15,
+			centeredSlides: false,
+			slidesPerView: 1.1,
+			speed: 500,
+		},
+		// when window width is >= 767px
+		767: {
+			spaceBetween: 15,
+			centeredSlides: false,
+			slidesPerView: 1.5,
+			speed: 500,
+		},
+		// when window width is >= 993px
+		993: {
+			spaceBetween: 16,
+			centeredSlides: true,
+			speed: 1000,
+		},
+	}
+});
+// testimonial slider js end--
