@@ -201,3 +201,33 @@ var swiper = new Swiper(".testimonial-slider", {
 	}
 });
 // testimonial slider js end--
+
+// icon-item-slider js start--
+var swiper = new Swiper(".icon-item-slider", {
+	slidesPerView: 2.4,
+	spaceBetween: 20,
+	grabCursor: true,
+	loop: true,
+	navigation: {
+		nextEl: '.icon-item-slider-btn-next',
+		prevEl: '.icon-item-slider-btn-prev',
+	},
+	breakpoints: {
+		// when window width is >= 320px
+		1: {
+			spaceBetween: 10,
+			slidesPerView: 1.2,
+		},
+		// when window width is >= 768px
+		576: {
+			spaceBetween: 16,
+			slidesPerView: 1.5,
+		},
+		// when window width is >= 993px
+		993: {
+			spaceBetween: 20,
+			slidesPerView: 2.4,
+		}
+	}
+});
+// product slider js end--

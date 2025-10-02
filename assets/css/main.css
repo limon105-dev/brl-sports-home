@@ -53,6 +53,7 @@
     --card-badge-bg: #242833;
     --body-color: #fff;
     --section-bg: #F5F5F5;
+    --section-bg2: #fcfbf9;
     --hover-color: #ED1C24;
 
 
@@ -325,8 +326,7 @@ button {
 
 .section-heading {
     color: var(--heading-text-color);
-    text-transform: capitalize;
-    font-size: 42px;
+    text-transform: uppercase;
     font-family: var(--heading-font);
     max-width: 650px;
     margin: 0 auto;
@@ -390,12 +390,6 @@ button {
     .section-sub-heading {
         font-size: 16px;
         line-height: 22px;
-    }
-
-    .section-heading {
-        line-height: 28px;
-        font-size: 22px;
-        font-weight: 500;
     }
 
     .section-heading-text {
