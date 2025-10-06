@@ -231,3 +231,21 @@ var swiper = new Swiper(".icon-item-slider", {
 	}
 });
 // product slider js end--
+
+// img-text-slider js start--
+var swiper = new Swiper(".img-text-slider", {
+	slidesPerView: 1,
+	spaceBetween: 0,
+	grabCursor: true,
+	autoHeight: true,
+	loop: true,
+	pagination: {
+		el: ".swiper-pagination",
+		clickable: true,
+	},
+	navigation: {
+		nextEl: '.swiper-button-next',
+		prevEl: '.swiper-button-prev',
+	},
+});
+// img-text-slider js end--

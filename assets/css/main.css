@@ -44,7 +44,7 @@
     --heading-text-color: #0B0B0B;
     --paragraph-text-color: #000000;
     --brand-color: #ED1C24;
-    --brand-color2: #306bac;
+    --brand-color2: #333333;
     --card-bg: #ededed;
     --border-color: #ccc;
     --text-muted: #8e8c8c;
@@ -54,6 +54,8 @@
     --body-color: #fff;
     --section-bg: #F5F5F5;
     --section-bg2: #fcfbf9;
+    --section-bg3: #f3e6e6;
+    --item-bg: #efbfc0;
     --hover-color: #ED1C24;
 
 
