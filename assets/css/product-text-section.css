@@ -1,0 +1,136 @@
+/* product-text-section css start */
+.product-text-section {
+    background: var(--section-bg4);
+    position: relative;
+}
+
+.product-text-section::before {
+    position: absolute;
+    content: "";
+    z-index: 1;
+    left: 0;
+    top: 0;
+    background-image: url("../images/icon-item-slider-section-svg.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 126px;
+    height: 328px;
+}
+
+.product-text-wrapper {
+    background: var(--white);
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+    align-items: center;
+    margin: 0 auto;
+    overflow: hidden;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+.product-text-price {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    padding: 40px;
+}
+
+.product-text-previous-price,
+.product-text-latest-price {
+    text-align: center;
+}
+
+.product-text-previous-price .title,
+.product-text-latest-price .title {
+    text-transform: capitalize;
+    margin: 0 0 8px 0;
+}
+
+.product-text-previous-price .subtitle,
+.product-text-latest-price .subtitle {
+    text-transform: capitalize;
+    margin: 8px 0 0 0;
+}
+
+.product-text-price-separator {
+    display: flex;
+}
+
+.product-text-content {
+    padding: 40px;
+}
+
+.product-text-content-title {
+    text-transform: capitalize;
+    margin: 0 0 20px 0;
+}
+
+.product-text-content-title em {
+    font-style: normal;
+    color: var(--brand-color);
+}
+
+.product-text-content-text {
+    font-size: 18px;
+    line-height: 26px;
+}
+
+/* product-text-section css end */
+
+@media only screen and (max-width: 992px) {
+
+    /* product-text-section css start */
+    .product-text-section::before {
+        display: none;
+    }
+
+    .product-text-wrapper {
+        gap: 20px;
+    }
+
+    .product-text-content {
+        padding: 40px 20px;
+    }
+
+    .product-text-price {
+        padding: 20px;
+    }
+
+    /* product-text-section css end */
+}
+
+@media only screen and (max-width: 767px) {
+
+    /* product-text-section css start */
+    .product-text-wrapper {
+        gap: 0;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .product-text-content {
+        padding: 20px;
+    }
+
+    /* product-text-section css end */
+}
+
+@media only screen and (max-width: 575px) {
+
+    /* product-text-section css start */
+    .product-text-price {
+        gap: 20px;
+    }
+
+    .product-text-content-text {
+        font-size: 16px;
+        line-height: 23px;
+    }
+
+    /* product-text-section css end */
+}

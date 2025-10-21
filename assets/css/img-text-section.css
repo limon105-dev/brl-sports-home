@@ -1,0 +1,129 @@
+/* img-text-section css start */
+.img-text-section {
+    background: var(--section-bg4);
+    position: relative;
+}
+
+.img-text-section::before {
+    position: absolute;
+    content: "";
+    z-index: 1;
+    left: 0;
+    top: 0;
+    background-image: url("../images/icon-item-slider-section-svg.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 126px;
+    height: 328px;
+}
+
+.img-text-wrapper {
+    background: var(--white);
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+    align-items: flex-end;
+    margin: 0 auto;
+    overflow: hidden;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+.img-text-content {
+    padding: 40px 0 40px 40px;
+}
+
+.img-text-content-title {
+    text-transform: capitalize;
+    margin: 0 0 20px 0;
+}
+
+.img-text-content-title em {
+    font-style: normal;
+    color: var(--brand-color);
+}
+
+.img-text-content-list li {
+    padding: 0 0 16px 34px;
+    position: relative;
+}
+
+.img-text-content-list li::before {
+    position: absolute;
+    content: "";
+    left: 0;
+    top: 3px;
+    width: 24px;
+    height: 24px;
+    background-image: url("../images/grean-check.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.img-text-content-list li p {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 26px;
+}
+
+.img-text-content .btn{
+    margin: 20px 0 0 0;
+}
+
+/* img-text-section css end */
+
+@media only screen and (max-width: 992px) {
+
+    /* img-text-section css start */
+    .img-text-section::before {
+        display: none;
+    }
+
+    /* img-text-section css end */
+}
+
+@media only screen and (max-width: 767px) {
+
+    /* img-text-section css start */
+    .img-text-wrapper {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .img-text-content {
+        padding: 40px 40px 0 40px;
+    }
+
+    /* img-text-section css end */
+}
+
+@media only screen and (max-width: 575px) {
+
+    /* img-text-section css start */
+    .img-text-wrapper {
+        gap: 20px;
+    }
+
+    .img-text-content {
+        padding: 20px;
+    }
+
+    .img-text-content-list li {
+        padding: 0 0 10px 30px;
+    }
+
+    .img-text-content-list li p {
+        font-size: 16px;
+        line-height: 23px;
+    }
+
+    .img-text-content-list li::before {
+        top: 0px;
+    }
+
+    /* img-text-section css end */
+}

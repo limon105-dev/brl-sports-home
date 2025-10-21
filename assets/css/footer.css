@@ -1,0 +1,107 @@
+/* footer css start */
+.footer-top {
+    padding: 0 0 50px 0;
+}
+
+.footer-items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.footer-item {
+    width: fit-content;
+}
+
+.footer-logo {
+    display: block;
+    max-width: 150px;
+}
+
+.social-links {
+    margin: 20px 0 0 0;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.footer-item-title {
+    text-transform: capitalize;
+    margin: 0 0 20px 0;
+}
+
+.footer-item-links li {
+    margin: 0 0 10px 0;
+}
+
+.footer-item-links li:last-child {
+    margin: 0;
+}
+
+.footer-item-links li a {
+    text-transform: capitalize;
+    color: var(--paragraph-text-color);
+    font-size: 16px;
+    line-height: 23px;
+}
+
+.footer-item-links li a:hover {
+    text-decoration: underline;
+}
+
+.footer-btm-text {
+    padding: 20px 0;
+    border-top: 1px solid var(--border-color);
+}
+
+.footer-btm-text:last-child {
+    padding-bottom: 0;
+}
+
+.footer-btm-text p a {
+    color: var(--brand-color);
+}
+
+/* footer css end */
+
+@media only screen and (max-width: 767px) {
+
+    /* footer css start */
+    .footer-item:first-child {
+        width: 100%;
+    }
+
+    .footer-item {
+        width: 30%;
+    }
+
+    /* footer css end */
+}
+
+@media only screen and (max-width: 575px) {
+
+    /* footer css start */
+    .footer-item {
+        width: 100%;
+    }
+
+    .footer-top {
+        padding: 0 0 16px 0;
+    }
+
+    .footer-item-title {
+        margin: 0 0 16px 0;
+    }
+
+    .footer-item-links li a {
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+    .footer-btm-text {
+        padding: 16px 0;
+    }
+
+    /* footer css end */
+}
