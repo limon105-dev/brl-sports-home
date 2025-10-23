@@ -339,6 +339,33 @@
     -ms-border-radius: 8px;
     -o-border-radius: 8px;
     position: relative;
+    transform: translateY(-10px);
+    opacity: 0;
+    visibility: hidden;
+    transition: all ease .3s;
+    -webkit-transition: all ease .3s;
+    -moz-transition: all ease .3s;
+    -ms-transition: all ease .3s;
+    -o-transition: all ease .3s;
+    -webkit-transform: translateY(-10px);
+    -moz-transform: translateY(-10px);
+    -ms-transform: translateY(-10px);
+    -o-transform: translateY(-10px);
+}
+
+.price-card-btn2 .btn:hover~.price-card-btn-info {
+    transform: translateY(0);
+    opacity: 1;
+    visibility: visible;
+    transition: all ease .3s;
+    -webkit-transition: all ease .3s;
+    -moz-transition: all ease .3s;
+    -ms-transition: all ease .3s;
+    -o-transition: all ease .3s;
+    -webkit-transform: translateY(0);
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -o-transform: translateY(0);
 }
 
 .price-card-btn-info :after {
